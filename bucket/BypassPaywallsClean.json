@@ -1,10 +1,10 @@
 {
-    "version": "2026-1-18",
+    "version": "6d825a6f",
     "extract_dir": "crx",
     "architecture": {
         "64bit": {
             "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass-paywalls-chrome-clean-master.zip&inline=false",
-            "hash": "4a98602fbaa6050b51f1d97907a6a6e51e5940eab49b8242d304a114172dd80c",
+            "hash": "6d825a6f312e083d2459fc8c0247dccebf210db80ccfd429b11ed69cc78c8079",
             "pre_install": [
                 "Rename-Item \"$dir\\raw\" \"bpc.zip\"",
                 "Expand-Archive -Path \"$dir\\bpc.zip\" -DestinationPath \"$dir\"",
@@ -15,9 +15,9 @@
     "description": "Extension to bypass paywalls on supported sites.",
     "homepage": "https://gitflic.ru/project/magnolia1234/bpc_uploads",
     "checkver": {
-		"url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=release-hashes.txt",
-		"regex": "SHA256 hash of bypass-paywalls-chrome-clean-master\\.zip:\\s*([a-fA-F0-9]{8})"
-	},
+        "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=release-hashes.txt",
+        "regex": "SHA256 hash of bypass-paywalls-chrome-clean-master\\.zip:\\s*([a-fA-F0-9]{8})"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
