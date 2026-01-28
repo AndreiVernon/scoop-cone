@@ -1,10 +1,10 @@
 {
-    "version": "483d2d36",
+    "version": "a82da39c",
     "extract_dir": "crx",
     "architecture": {
         "64bit": {
             "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass-paywalls-chrome-clean-master.zip&inline=false",
-            "hash": "483d2d36c6d3b6c5b0bc36575e1a9146dc48491c744af3546f89f7348b97ea9d",
+            "hash": "a82da39cda3d0f2a28ecbc36b9d79cb28a68a61e27c002b93507957bb34bf8b9",
             "pre_install": [
                 "Rename-Item \"$dir\\raw\" \"bpc.zip\"",
                 "Expand-Archive -Path \"$dir\\bpc.zip\" -DestinationPath \"$dir\"",
