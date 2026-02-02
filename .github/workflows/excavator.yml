@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
   schedule:
     # run every hour
-    - cron: '20 * * * *'
+    - cron: '20 */2 * * *'
 name: Excavator
 jobs:
   excavate:
