@@ -1,5 +1,5 @@
 {
-    "version": "4.3.0.0",
+    "version": "4.2.0.0",
     "extract_dir": "crx",
     "architecture": {
         "64bit": {
@@ -21,12 +21,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass-paywalls-chrome-clean-master.zip&inline=false"
+                "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass-paywalls-chrome-clean-$version.crx&inline=false"
             }
-        },
-        "hash": {
-            "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=release-hashes.txt",
-            "find": "SHA256 hash of bypass-paywalls-chrome-clean-master\\.zip:\\s*([a-fA-F0-9]{64})"
         }
     }
 }
