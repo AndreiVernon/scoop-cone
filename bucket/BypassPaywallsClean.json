@@ -1,5 +1,6 @@
 {
     "version": "4.3.0.0",
+    "license": "MIT",
     "extract_dir": "crx",
     "architecture": {
         "64bit": {
