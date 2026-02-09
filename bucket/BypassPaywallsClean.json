@@ -1,15 +1,13 @@
 {
-    "version": "4.3.0.0",
+    "version": "4.2.9.1",
     "license": "MIT",
-    "extract_dir": "crx",
     "architecture": {
         "64bit": {
             "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass-paywalls-chrome-clean-4.3.0.0.crx&inline=false",
             "hash": "cb312b38dc26c7a15d71c9dd6dc2292e3a9e3272b86a16b7473916748918cb61",
             "pre_install": [
-                "Rename-Item \"$dir\\raw\" \"bpc.zip\"",
-                "Expand-Archive -Path \"$dir\\bpc.zip\" -DestinationPath \"$dir\"",
-                "Remove-Item \"$dir\\bpc.zip\""
+                "Expand-7ZipArchive -Path \"$dir\\raw\" -DestinationPath \"$dir\\bypass-paywalls-chrome-clean\"",
+                "Remove-Item \"$dir\\raw\""
             ]
         }
     },
@@ -24,6 +22,10 @@
             "64bit": {
                 "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass-paywalls-chrome-clean-$version.crx&inline=false"
             }
+        },
+        "hash": {
+            "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=release-hashes.txt",
+            "find": "SHA256 hash of bypass-paywalls-chrome-clean-$version\\.crx:\\s*([a-fA-F0-9]{64})"
         }
     }
 }
