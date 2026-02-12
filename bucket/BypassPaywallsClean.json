@@ -14,8 +14,9 @@
     "description": "Extension to bypass paywalls on supported sites.",
     "homepage": "https://gitflic.ru/project/magnolia1234/bpc_uploads",
     "checkver": {
-        "url": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-chrome-clean/blob/raw?file=changelog.txt",
-        "regex": "\\* v([0-9]+(?:\\.[0-9]+)*)"
+        "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=release-hashes.txt",
+        "regex": "SHA256 hash of bypass-paywalls-chrome-clean-([\\d.]+)\\.crx",
+        "reverse": true
     },
     "autoupdate": {
         "architecture": {
