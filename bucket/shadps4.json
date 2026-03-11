@@ -8,7 +8,7 @@
     },
     "notes": [
         "ATTENTION: shadPS4 requires a copy of the official PS4 firmware to function.",
-        "See the official quickstart guide for further instructions: https://github.com/shadps4-emu/shadPS4/blob/main/documents/Quickstart/Quickstart.md"
+        "See the official quickstart guide for further instructions: https://shadps4.net/quickstart/#3-install-games-and-related-content"
     ],
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
