@@ -1,5 +1,5 @@
 {
-    "version": "2025-10-30-715eb51",
+    "version": "2026-03-10-ac3786f",
     "description": "PlayStation 4 emulator for Windows, Linux and macOS (nightly version)",
     "homepage": "https://shadps4.net/",
     "license": {
@@ -13,8 +13,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://github.com/shadps4-emu/shadPS4/releases/download/Pre-release-shadPS4-2025-10-30-715eb512c9b84bfcc5f208881a657dd02a58393e/shadps4-win64-qt-2025-10-30-715eb51.zip",
-    "hash": "2d0d67816f628582776ff5b390f7567c0aff342c8293e3d2d5e9309302936ace",
+    "url": "https://github.com/shadps4-emu/shadPS4/releases/download/Pre-release-shadPS4-2026-03-10-ac3786f533024f04c77b5d295a14bca05f737751/shadps4-win64-sdl-2026-03-10-ac3786f.zip",
+    "hash": "4db911f81957600caa203478e31703e2b15aad1c725e6b6406c6f4e62019bac5",
     "bin": "shadPS4.exe",
     "shortcuts": [
         [
@@ -24,11 +24,11 @@
     ],
     "persist": "user",
     "checkver": {
-      "url": "https://api.github.com/repos/shadps4-emu/shadPS4/releases",
-      "jsonpath": "$[?(@.prerelease==true)].assets[*].browser_download_url",
-      "regex": "/download/(?<tag>[^/]+)/shadps4-(?<platform>[^/]+)-(?<version>\\d{4}-\\d{2}-\\d{2}-[a-fA-F0-9]+)\\.zip"
+        "url": "https://api.github.com/repos/shadps4-emu/shadPS4/releases",
+        "jsonpath": "$[?(@.prerelease==true)].assets[*].browser_download_url",
+        "regex": "/download/(?<tag>[^/]+)/shadps4-(?<platform>[^/]+)-(?<version>\\d{4}-\\d{2}-\\d{2}-[a-fA-F0-9]+)\\.zip"
     },
     "autoupdate": {
-      "url": "https://github.com/shadps4-emu/shadPS4/releases/download/$matchTag/shadps4-win64-sdl-$version.zip"
+        "url": "https://github.com/shadps4-emu/shadPS4/releases/download/$matchTag/shadps4-win64-sdl-$version.zip"
     }
 }
