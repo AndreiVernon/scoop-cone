@@ -24,10 +24,11 @@
     ],
     "persist": "user",
     "checkver": {
-        "url": "https://github.com/shadps4-emu/shadPS4/releases/latest",
-        "regex": "shadps4 v\\.([\\d.]+)"
+        "url": "https://api.github.com/repos/shadps4-emu/shadPS4/releases/latest",
+        "jsonpath": "$.assets[*].browser_download_url",
+        "regex": "/download/(?<tag>[^/]+)/shadps4-(?<platform>[^/]+)-(?<version>[\\d.]+)\\.zip"
     },
     "autoupdate": {
-        "url": "https://github.com/shadps4-emu/shadPS4/releases/download/v.$version/shadps4-win64-sdl-$version.zip"
+        "url": "https://github.com/shadps4-emu/shadPS4/releases/download/$matchTag/shadps4-win64-sdl-$version.zip"
     }
 }
