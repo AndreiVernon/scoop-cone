@@ -6,20 +6,26 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.imagej.net/fiji/archive/latest/20260421-1817/fiji-latest-win64-jdk.zip",
-            "hash": "dc44bd9e3201593571c4e97e2b8bb70952a697d6d7cbea9fdcc45aaa31d6f378"
+            "hash": "dc44bd9e3201593571c4e97e2b8bb70952a697d6d7cbea9fdcc45aaa31d6f378",
+            "shortcuts": [
+                [
+                    "fiji-windows-x64.exe",
+                    "Fiji"
+                ]
+            ]
         },
         "arm64": {
             "url": "https://downloads.imagej.net/fiji/archive/latest/20260421-1817/fiji-latest-win-arm64-jdk.zip",
-            "hash": "9595a09b587a5bb867470ea213681a29b86b9b0c606ef886ed6bb858987fee3e"
+            "hash": "9595a09b587a5bb867470ea213681a29b86b9b0c606ef886ed6bb858987fee3e",
+            "shortcuts": [
+                [
+                    "fiji-windows-arm64.exe",
+                    "Fiji"
+                ]
+            ]
         }
     },
     "extract_dir": "Fiji",
-    "shortcuts": [
-        [
-            "ImageJ-win64.exe",
-            "Fiji"
-        ]
-    ],
     "checkver": {
         "url": "https://downloads.imagej.net/fiji/archive/latest/?C=M;O=D",
         "regex": "(\\d{8}-\\d{4})/"
