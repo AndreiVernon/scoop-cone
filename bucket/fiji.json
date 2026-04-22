@@ -13,7 +13,7 @@
             "hash": "9595a09b587a5bb867470ea213681a29b86b9b0c606ef886ed6bb858987fee3e"
         }
     },
-    "extract_dir": "Fiji.app",
+    "extract_dir": "Fiji",
     "shortcuts": [
         [
             "ImageJ-win64.exe",
