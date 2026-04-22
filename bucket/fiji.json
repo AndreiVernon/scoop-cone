@@ -21,8 +21,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://downloads.imagej.net/fiji/archive/latest/",
-        "regex": "(\\d{8}-\\d{4})/"
+        "url": "https://downloads.imagej.net/fiji/archive/latest/?C=M;O=D",
+        "regex": "(\\d{8}-\\d{4})/",
+        "reverse": true
     },
     "autoupdate": {
         "architecture": {
