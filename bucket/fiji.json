@@ -1,0 +1,43 @@
+{
+    "version": "20260319-2317",
+    "description": "ImageJ distribution with many plugins which facilitating scientific image analysis.",
+    "homepage": "https://fiji.sc/",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.imagej.net/fiji/archive/latest/20260319-2317/fiji-latest-win64-jdk.zip",
+            "hash": "28a739263bf9c6b4a044b945f2c5e9cd7c0db3e4204c2d9e3f7484fb1f109800"
+        },
+        "arm64": {
+            "url": "https://downloads.imagej.net/fiji/archive/latest/20260319-2317/fiji-latest-win-arm64-jdk.zip",
+            "hash": "d2e4d07b890e95486c1aabc1c254984a7b2ae4f717b466368cd6c0c770eeb1cb"
+        }
+    },
+    "extract_dir": "Fiji.app",
+    "shortcuts": [
+        [
+            "ImageJ-win64.exe",
+            "Fiji"
+        ]
+    ],
+    "checkver": {
+        "url": "https://downloads.imagej.net/fiji/archive/latest/",
+        "regex": "(\\d{8}-\\d{4})/"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.imagej.net/fiji/archive/latest/$version/fiji-latest-win64-jdk.zip",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            },
+            "arm64": {
+                "url": "https://downloads.imagej.net/fiji/archive/latest/$version/fiji-latest-win-arm64-jdk.zip",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
+        }
+    }
+}
