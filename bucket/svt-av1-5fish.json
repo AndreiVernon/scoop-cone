@@ -1,5 +1,5 @@
 {
-    "version": "260427",
+    "version": "260428",
     "description": "SVT-AV1-PSY fork based on 2.3.0-C with 3.x+ backports and additional changes. Adds --lineart-psy-bias, --texture-psy-bias, and advanced psychoacoustic tuning.",
     "homepage": "https://github.com/Akatmks/svt-av1-psy-quality",
     "license": "BSD-3-Clause-Clear",
