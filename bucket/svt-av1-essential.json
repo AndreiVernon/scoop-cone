@@ -46,13 +46,12 @@
     "checkver": {
         "url": "https://api.github.com/repos/Akatmks/svt-av1-psy-quality/releases",
         "jsonpath": "$[?(@.tag_name =~ /essential/)].assets[*].browser_download_url",
-        "regex": "svt-av1-essential_v(?<version>[\\d\\.]+)_(?<build>\\d+)",
-        "replace": "${version}-${build}"
+        "regex": "/download/(?<tag>svt-av1-essential_(?<version>v[\\d.]+_[\\d-]+))/SVT-AV1-Essential_(?<basev>v[\\d.]+)-Essential\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$matchTag/SVT-AV1-Essential_$version-Essential.7z"
+                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$tag/SVT-AV1-Essential_$basev-Essential.7z"
             }
         },
         "extract_dir": "SVT-AV1-Essential_$version-Essential"

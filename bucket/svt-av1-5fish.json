@@ -35,12 +35,12 @@
     "checkver": {
         "url": "https://api.github.com/repos/Akatmks/svt-av1-psy-quality/releases",
         "jsonpath": "$[?(@.tag_name =~ /5fish/)].assets[*].browser_download_url",
-        "regex": "5fish_svt-av1-psy_(?<version>[\\d-]+)"
+        "regex": "/download/(?<tag>5fish/svt-av1-psy_[\\d-]+)/5fish_svt-av1-psy_(?<version>[\\d-]+)\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$matchTag/5fish_svt-av1-psy_$version.7z"
+                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$tag/5fish_svt-av1-psy_$version.7z"
             }
         },
         "extract_dir": "5fish_svt-av1-psy_$version"
