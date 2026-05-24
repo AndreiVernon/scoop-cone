@@ -9,7 +9,7 @@
             "hash": "bd18bfbc3269c0d1227b33d0a05e6805985cb836847b4b66566c64de48804a6b"
         }
     },
-    "extract_dir": "SVT-AV1-Essential_v4.0.1_260315-Essential",
+    "extract_dir": "SVT-AV1-Essential_v4.0.1-Essential",
     "pre_install": [
         "Move-Item \"$dir\\Clang 22.1.1 x86-64-v3\\ffms2.dll\" \"$dir\\ffms2.dll\"",
         "Move-Item \"$dir\\Clang 22.1.1 x86-64-v3\\SvtAv1EncApp.exe\" \"$dir\\SvtAv1EncApp-v3.exe\"",
@@ -54,6 +54,6 @@
                 "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$matchTag/SVT-AV1-Essential_$matchBasev-Essential.7z"
             }
         },
-        "extract_dir": "SVT-AV1-Essential_$version-Essential"
+        "extract_dir": "SVT-AV1-Essential_$matchBasev-Essential"
     }
 }
