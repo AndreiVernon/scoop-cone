@@ -25,7 +25,7 @@
     ],
     "notes": [
         " ATTENTION: The 'SvtAv1EncApp' alias points to the generic x86-64-v3 binary by default.",
-        " If your CPU supports AVX512 (Intel Icelake-Server+ or AMD Zen 5+), you can explicitly",
+        " If your CPU supports AVX512 (Intel Icelake-Server+ or AMD Zen 4+), you can explicitly",
         " call 'SvtAv1EncApp-avx512' for maximum rendering performance.",
         " ",
         " Alternatively, set the 'SvtAv1EncApp' shortcut to point to it with the following command:",
