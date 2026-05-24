@@ -40,7 +40,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$tag/5fish_svt-av1-psy_$version.7z"
+                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$matchTag/5fish_svt-av1-psy_$version.7z"
             }
         },
         "extract_dir": "5fish_svt-av1-psy_$version"

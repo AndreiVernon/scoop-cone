@@ -51,7 +51,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$tag/SVT-AV1-Essential_$basev-Essential.7z"
+                "url": "https://github.com/Akatmks/svt-av1-psy-quality/releases/download/$matchTag/SVT-AV1-Essential_$matchBasev-Essential.7z"
             }
         },
         "extract_dir": "SVT-AV1-Essential_$version-Essential"
