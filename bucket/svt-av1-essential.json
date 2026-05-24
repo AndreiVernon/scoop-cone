@@ -45,7 +45,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/Akatmks/svt-av1-psy-quality/releases",
-        "jsonpath": "$[*].assets[*].browser_download_url",
+        "jsonpath": "$[?(@.tag_name =~ /essential/)].assets[*].browser_download_url",
         "regex": "svt-av1-essential_v(?<version>[\\d\\.]+)_(?<build>\\d+)",
         "replace": "${version}-${build}"
     },
