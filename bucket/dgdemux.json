@@ -3,6 +3,9 @@
     "description": "DGDemux is a standalone demuxer for BluRay/UHD disks.",
     "homepage": "https://www.rationalqm.us/dgdemux/dgdemux.html",
     "license": "Freeware",
+    "suggest": {
+        "dovi-tool": "extras/dovi-tool"
+    },
     "architecture": {
         "64bit": {
             "url": "https://www.videohelp.com/download/DGDemux_1.0.0.84.zip",
