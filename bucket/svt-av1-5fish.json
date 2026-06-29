@@ -13,10 +13,6 @@
                 "d390f8f0454c3be983e77a87bd3099d78b1b8b1afb89f096d70d3a40f6db2d69",
                 "ffc1181ddcbf22a4be45218b6e00cc71bf4e9252f093576f1f398b0f83f0eb45"
             ],
-            "extract_to": [
-                "",
-                "znver2"
-            ],
             "pre_install": [
                 "Move-Item \"$dir\\SvtAv1EncApp.exe\" \"$dir\\SvtAv1EncApp-v3.exe\" -Force",
                 "Move-Item \"$dir\\znver2\\SvtAv1EncApp.exe\" \"$dir\\SvtAv1EncApp.exe\" -Force",
@@ -36,6 +32,10 @@
             "bin": "SvtAv1EncApp.exe"
         }
     },
+    "extract_to": [
+        "",
+        "znver2"
+    ],
     "notes": [
         " ATTENTION: On x86 systems, the 'SvtAv1EncApp' alias points to the optimized zen2 binary by default.",
         " If your CPU doesn't support it (older than AMD Zen 2 or Intel 11th gen),",
