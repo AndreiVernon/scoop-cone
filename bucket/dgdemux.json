@@ -28,7 +28,8 @@
         ]
     ],
     "pre_install": [
-        "Expand-Archive \"$dir\\thdmerge_*.zip\"; Remove-Item \"$dir\\thdmerge_*.zip\"",
+        "Expand-Archive \"$dir\\thdmerge_*.zip\" -DestinationPath \"$dir\"",
+        "Remove-Item \"$dir\\thdmerge_*.zip\"",
         "\"finished.wav\", \"dovi_tool.exe\", \"dovi_tool.txt\", \"MediaInfoCLI.exe\", \"MediaInfoCLI.txt\", \"thdmerge.cpp\" | ForEach-Object { $file = \"$dir\\$_\"; Remove-Item $file }"
     ],
     "persist": [
