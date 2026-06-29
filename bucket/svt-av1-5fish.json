@@ -1,5 +1,5 @@
 {
-    "version": "1.4.260122",
+    "version": "2.3.260627",
     "description": "SVT-AV1-PSY fork focused on high efficiency and high fidelity encoding, with additional parameters tailored for 2D content",
     "homepage": "https://github.com/5fish/SVT-AV1",
     "license": "BSD-3-Clause-Clear",
