@@ -1,0 +1,45 @@
+{
+    "version": "5.1.0-beta5",
+    "description": "Video subtitles editor",
+    "homepage": "https://www.nikse.dk/subtitleedit/",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.1.0-beta6/SubtitleEdit-Windows-x64.zip",
+            "hash": "c13230dfeb78e9859eee41bf009de20a9324ecd85d877f96750455c56a7bb491"
+        },
+        "arm64": {
+            "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v5.1.0-beta6/SubtitleEdit-Windows-ARM64.zip",
+            "hash": "217d75b158296e28f9308fb47ea7d3cf8353cb50a277e384ac0e97885d10e5fd"
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Settings.xml\")) { New-Item \"$dir\\Settings.xml\" | Out-Null }",
+    "bin": [
+        [
+            "SubtitleEdit.exe",
+            "subtitleedit"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "SubtitleEdit.exe",
+            "Subtitle Edit"
+        ]
+    ],
+    "persist": "Settings.xml",
+    "checkver": {
+        "url": "https://api.github.com/repos/SubtitleEdit/subtitleedit/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "^(?<tag>v?(?<version>[\\w.-]+))$"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/$matchTag/SubtitleEdit-Windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/$matchTag/SubtitleEdit-Windows-ARM64.zip"
+            }
+        }
+    }
+}
