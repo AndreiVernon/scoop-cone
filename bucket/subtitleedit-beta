@@ -30,15 +30,15 @@
     "checkver": {
         "url": "https://api.github.com/repos/SubtitleEdit/subtitleedit/releases",
         "jsonpath": "$[0].tag_name",
-        "regex": "^(?<tag>v?(?<version>[\\w.-]+))$"
+        "regex": "v(?<version>[\\w.-]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/$matchTag/SubtitleEdit-Windows-x64.zip"
+                "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v$version/SubtitleEdit-Windows-x64.zip"
             },
             "arm64": {
-                "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/$matchTag/SubtitleEdit-Windows-ARM64.zip"
+                "url": "https://github.com/SubtitleEdit/subtitleedit/releases/download/v$version/SubtitleEdit-Windows-ARM64.zip"
             }
         }
     }
