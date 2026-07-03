@@ -13,7 +13,7 @@
             "hash": "217d75b158296e28f9308fb47ea7d3cf8353cb50a277e384ac0e97885d10e5fd"
         }
     },
-    "pre_install": "if (!(Test-Path \"$persist_dir\\Settings.xml\")) { New-Item \"$dir\\Settings.xml\" | Out-Null }",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Settings.json\")) { New-Item \"$dir\\Settings.json\" | Out-Null }",
     "bin": [
         [
             "SubtitleEdit.exe",
@@ -26,7 +26,7 @@
             "Subtitle Edit"
         ]
     ],
-    "persist": "Settings.xml",
+    "persist": "Settings.json",
     "checkver": {
         "url": "https://api.github.com/repos/SubtitleEdit/subtitleedit/releases",
         "jsonpath": "$[0].tag_name",
