@@ -40,7 +40,7 @@
         " ATTENTION: The 'SvtAv1EncApp' alias points to the generic x86-64-v3 binary by default.",
         " ",
         " Depending on your hardware platform, you can manually use any of the alternative shims,",
-        " or set the 'SvtAv1EncApp' shortcut to point to them with the following commands:"
+        " or set the 'SvtAv1EncApp' shortcut to point to them with the following commands:",
         " ",
         " - SvtAv1EncApp-znver2 (AMD Zen 2 / 3)",
         " scoop shim add SvtAv1EncApp `",
