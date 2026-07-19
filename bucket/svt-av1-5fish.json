@@ -1,5 +1,5 @@
 {
-    "version": "2.3.260718",
+    "version": "2.3.260719",
     "description": "SVT-AV1-PSY fork focused on high efficiency and high fidelity encoding, with additional parameters tailored for 2D content",
     "homepage": "https://github.com/5fish/SVT-AV1",
     "license": "BSD-3-Clause-Clear",
@@ -8,12 +8,12 @@
             "url": [
                 "https://github.com/5fish/SVT-AV1/releases/download/v2.3.260719/Windows_x86-64_x86-64-v3+znver2.tar.xz",
                 "https://github.com/5fish/SVT-AV1/releases/download/v2.3.260719/Windows_x86-64_znver2.tar.xz",
-                "https://github.com/5fish/SVT-AV1/releases/download/v2.3.260629/Windows_x86-64_icelake-server+znver5.tar.xz"
+                "https://github.com/5fish/SVT-AV1/releases/download/v2.3.260719/Windows_x86-64_icelake-server+znver5.tar.xz"
             ],
             "hash": [
                 "139f71af4ea2e04258735748b1390e8b4686b499cb88907017618287c67ca88e",
                 "d9170baca69dc27f2c10ab4f5e326751b59eb1d180875cd0af13ad351fd09544",
-                "35a6e069f7f17b0e3ede00d0510f6cfd4f97e0cc8f812c2bc16ba5894ecc24ae"
+                "9779d06a0f1e4a117c1f8494b7c8b1f20d2ab877bb5185a1a6a9c150f901c662"
             ],
             "pre_install": [
                 "Move-Item \"$dir\\SvtAv1EncApp.exe\" \"$dir\\SvtAv1EncApp-v3.exe\" -Force",
